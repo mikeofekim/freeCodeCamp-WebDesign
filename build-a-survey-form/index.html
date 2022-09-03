@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+        <form action="https://freecodecamp.org/learn/2022" id="survey-form">
+
+        <fieldset>
+            <label id="name-label">Name<input type="text" id="name" name="name" required placeholder="Enter your name"></label>
+            <label id="email-label">Email<input type="email" id="email" name="email" required placeholder="Enter your Email"></label>
+            <label id="number-label">Age (optional)<input type="number" id="number" name="age" required min="10" max="99" placeholder="Age"></label> 
+        </fieldset>
+
+        <fieldset>
+            <label>Which option best describe your current role?
+                <select id="dropdown">
+                    <option selected disabled>Select current role</option>
+                    <option>Student</option>
+                    <option>Full Time Job</option>
+                    <option>Full Time Learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+            </label>
+
+            <label>Would you recommend freeCodeCamp to a friend?
+                <label><input type="radio" name="choice" value="Definitely" > Definitely</label>
+                <label><input type="radio" name="choice" value="Maybe"> Maybe</label>
+                <label><input type="radio" name="choice" value="Not sure"> Not sure</label>
+            </label>
+
+            <label>What is your favorite feature of freeCodeCamp?
+                <select id="favorite">
+                    <option selected disabled>Select an option</option>
+                    <option>Challenges</option>
+                    <option>Projects</option>
+                    <option>Community</option>
+                    <option>Open Source</option>
+                    
+                </select>
+            </label>
+
+            
+        </fieldset>
+
+        <fieldset>
+            <label>What would you like too see improved? (Check all that apply)
+                <label><input type="checkbox" name="answer" value="choice1"> Front-end Projects</label>
+                <label><input type="checkbox" name="answer" value="choice2"> Back-end Projects</label>
+                <label><input type="checkbox" name="answer" value="choice3"> Data Visualization</label>
+                <label><input type="checkbox" name="answer" value="choice4"> Challenges</label>
+                <label><input type="checkbox" name="answer" value="choice5"> Open Source Community</label>
+                <label><input type="checkbox" name="answer" value="choice6"> Gitter help rooms</label>
+                <label><input type="checkbox" name="answer" value="choice7"> Videos</label>
+                <label><input type="checkbox" name="answer" value="choice8"> City Meetups</label>
+                <label><input type="checkbox" name="answer" value="choice9"> Wiki</label>
+                <label><input type="checkbox" name="answer" value="choice10"> Forum</label>
+                <label><input type="checkbox" name="answer" value="choice11"> Additional Course</label>
+            </label>
+
+            <label>Any comments or suggestions?<textarea placeholder="Enter your comment here..."></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" id="submit">
+        </form>
+        
+
+    </body>
+</html

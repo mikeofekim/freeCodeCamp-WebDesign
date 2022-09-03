@@ -1,0 +1,85 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-color: rgba(0, 0, 200, 0.3);
+    font-size: 16px;
+    color: #f5f6f6;
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 auto;
+    text-align: center;
+
+    margin-top: 1.5em;
+}
+
+p {
+    font-size: 1.125rem;
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2em;
+}
+
+label {
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.4rem;
+    display: block;
+    padding: 1rem auto;
+}
+
+form {
+    width: 80vw;
+
+    min-width: 400px;
+    max-width: 800px;
+    background-color: rgba(27, 27, 50, 0.8);
+    margin: 0 auto;
+    padding: 2em;
+}
+
+fieldset {
+    border: none;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='submit'],
+select,
+textarea {
+    display: block;
+    padding: 5px;
+    border-radius: 3px;
+    width: 100%;
+    height: 2.5em;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+input[type='radio'],
+input[type='checkbox'] {
+    width: 1.5rem;
+    height: 1.1rem;
+    vertical-align: center;
+}
+
+textarea {
+    height: 8em;
+    resize: vertical;
+}
+
+input[type='submit'] {
+    background-color: #37af65;
+    height: 3em;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
